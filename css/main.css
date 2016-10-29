@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700,900');
+
+*{
+  transition: 1s;
+}
+
+body{
+  font-family: 'Lato', sans-serif;  
+  background-color: #26272b;
+  overflow-x: hidden;
+}
+
+.container{
+  width: 100vw;
+  max-width: 1100px;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: middle;
+  margin: auto;
+}
+
+#points{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: middle;
+}
+
+.top-banner{
+    padding: 35px 0 25px 0;
+    box-sizing: border-box;
+    .title{
+        font-weight: 700;
+        color: #f9f8f4;
+        text-align: center;
+        letter-spacing: 0.08em;
+        margin: 0;
+    }
+    .desc{
+        margin: 8px 0;
+        font-weight: 400;
+        color: #f9f8f4;
+        opacity: 0.8;
+        font-size: 14px;
+        text-align: center;
+        letter-spacing: 0.08em;
+    }
+}
+    .arrow_box {
+     position: relative;
+     background: #26272b;
+    }
+    .arrow_box:after {
+     top: 100%;
+     left: 50%;
+     border: solid transparent;
+     content: " ";
+     height: 0;
+     width: 0;
+     position: absolute;
+     pointer-events: none;
+     border-color: rgba(38, 39, 43, 0);
+     border-top-color: #26272b;
+     border-width: 15px;
+     margin-left: -15px;
+    }
+
+.points-content{
+  background-color: #303135;
+  width: 100%;
+  color: #fff;
+  ul{
+    list-style: none;
+    display:flex;
+    flex-direction: row;
+    padding: 20px 30px;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    justify-content: center;
+    li{
+      display: inline-block;
+      margin: 10px;
+      padding: 17px 20px;
+      box-sizing: border-box;
+      transition: 0.3s background-color, 0.3s box-shadow;
+      border-radius: 5px;
+      .icon{
+        width: 55px;
+        height: 55px;
+        display: inline-block;
+        vertical-align: top;
+        font-size:55px;
+        color:#777;
+        text-shadow:-3px 1px #222;
+      }
+      .divider{
+        height: 100%;
+        width: 2px;
+        background-color: #fff;
+        opacity: 0.4;
+        margin: 0 7px;
+        display: inline-block;
+      }
+      
+      .content{
+        width: 250px;
+        display: inline-block;
+        vertical-align: top;
+      }
+      
+      .point-title{
+        font-weight: 700;
+        font-size: 16px;
+        margin: 0 0 8px 0;
+        word-wrap: break-word;
+        line-height: 1em;
+      }
+      
+      .point-desc{
+        margin: 0;
+        font-weight: 400;
+        font-size: 14px;
+        opacity: 0.8;
+      }
+    }
+    li:hover{
+      background-color: rgba(#000000, 0.08);
+      transition: 0.7s background-color, 0.5s box-shadow;
+      box-shadow: 0px 10px 61px 0px rgba(255,255,255,0.02);
+    }
+  }
+}
