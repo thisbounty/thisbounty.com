@@ -27,7 +27,11 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
+.icon-moneybag.big {
+    font-size:48px;
+    text-align:center;
+    color:#FFF;
+}
 .icon-moneybag:before {
   content: "\e900";
 }
