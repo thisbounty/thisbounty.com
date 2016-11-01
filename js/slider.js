@@ -9,4 +9,5 @@ $("body").on('click', '#nextSlide', function() {
   else{
     $('.slide.active').addClass('out').next('.slide').addClass('active');
   }
+  return false;
 });
