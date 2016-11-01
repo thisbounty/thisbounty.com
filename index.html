@@ -72,7 +72,10 @@
             <div class="divider"></div>
             <div class="content">
               <h5 class="point-title">How</h5>
-              <p class="point-desc">Request an invite at:<br><br><a href="mailto:thisbounty@protonmail.com">thisbounty@protonmail.com</a></p>
+              <form method="POST" action="/invite" id="join-form" class="form">
+                  <label class="point-desc">Request an invite:</label>
+                  <input type="email" name="email" placeholder="email" id="slack-email" class="field"><input type="submit" value="Join" class="submit">
+              </form>
             </div>
           </li>
         </ul>
