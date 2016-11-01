@@ -1,18 +1,10 @@
 @import url("https://fonts.googleapis.com/css?family=Lato:400,700,900");
-* {
-  transition: 1s; }
-
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?m6k56l');
-  src:  url('fonts/icomoon.eot?m6k56l#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?m6k56l') format('truetype'),
-    url('fonts/icomoon.woff?m6k56l') format('woff'),
-    url('fonts/icomoon.svg?m6k56l#icomoon') format('svg');
+  src: url("fonts/icomoon.eot?m6k56l");
+  src: url("fonts/icomoon.eot?m6k56l#iefix") format("embedded-opentype"), url("fonts/icomoon.ttf?m6k56l") format("truetype"), url("fonts/icomoon.woff?m6k56l") format("woff"), url("fonts/icomoon.svg?m6k56l#icomoon") format("svg");
   font-weight: normal;
-  font-style: normal;
-}
-
+  font-style: normal; }
 [class^="icon-"], [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'icomoon' !important;
@@ -22,22 +14,23 @@
   font-variant: normal;
   text-transform: none;
   line-height: 1;
-
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+  -moz-osx-font-smoothing: grayscale; }
+
 .icon-moneybag.big {
-    font-size:48px;
-    text-align:center;
-    color:#FFF;
-}
+  font-size: 48px;
+  text-align: center;
+  color: #FFF; }
+
 .icon-moneybag:before {
-  content: "\e900";
-}
+  content: "\e900"; }
+
 .icon-credit-card:before {
-  content: "\e93f";
-}
+  content: "\e93f"; }
+
+* {
+  transition: 1s; }
 
 body {
   font-family: 'Lato', sans-serif;
@@ -45,18 +38,13 @@ body {
   overflow-x: hidden; }
 
 a {
-    color:#FFF;
-    text-decoration:underline;
-    font-weight:strong;
-}
-a:hover {
-    text-decoration:underline;
-    cursor:pointer;
-}
+  color: #FFF;
+  text-decoration: underline;
+  font-weight: strong; }
 
-.icon-moneybag:before {
-  content: "\e900";
-}
+a:hover {
+  text-decoration: underline;
+  cursor: pointer; }
 
 .container {
   width: 100vw;
@@ -90,9 +78,9 @@ a:hover {
     font-size: 14px;
     text-align: center;
     letter-spacing: 0.08em; }
-    .top-banner a {
-         text-decoration:none;
-    }
+  .top-banner a {
+    text-decoration: none; }
+
 .arrow_box {
   position: relative;
   background: #26272b; }
