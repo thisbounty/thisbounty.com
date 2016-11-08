@@ -79,12 +79,13 @@
     </div> <!-- points content -->
     </section>
     <div id="textSlider">
+        <p>Contribute through github pull requests or codepen</p>
         <div class="slide active">
           <div class="project-header">
               <p class="project-title">Metronic Theme Install</p>
-              <p class="project-created project-date">November 4, 2016</p>
-              <p class="project-price">$10.00 USD</p>
-              <p class="project-notes">Please fork existing repo, and send pull request. Remove everything except Dashboard icon in menu, and the Responsive Flip Scroll Table. Copy table, and change columns per below.</p>
+              <p class="project-created project-date">November 8, 2016</p>
+              <p class="project-price">$25.00 USD</p>
+              <p class="project-notes">Remove everything except Dashboard icon in menu, and the Responsive Flip Scroll Table. Copy table, and change columns per below.</p>
          </div>
           <div class="project-tasks">
               <p class="project-task">Use admin_5/table_static_responsive.html page</p>
@@ -107,20 +108,116 @@
           </div>
         </div>
         <div class="slide">
-          <p class="project-title">Loopback Install</p>
-          <p class="project-created project-date">November 4, 2016</p>
-          <p class="project-price">$10.00 USD</p>
+          <p class="project-title">Loopback and TokBox call/new endpoint</p>
+          <p class="project-created project-date">November 8, 2016</p>
+          <p class="project-price">$50.00 USD</p>
+          <p class="project-notes">Need to integrate OpenTok Node SDK to call/new endpoint in Loopback. Create an OpenTok session and generate an OpenTok token. Return as JSON, and restrict endpoint to logged in users.</p>
           <div class="project-tasks">
-              <p class="project-task">Use admin_5/table_static_responsive.html page</p>
-              <p class="project-task">Remove all sidebar links except Dashboard</p>
-              <p class="project-task">Remove top left "Metronic" text</p>
-              <p class="project-task">Remove all top bar icons, except username and logout</p>
-              <p class="project-task">Remove h1.page-title, div.toggler, breadcrumbs, and div.note</p>
-              <p class="project-task">Remove all tables, except Responsive flip scroll table.</p>
-              <p class="project-task">Remove data rows from responsive flip scroll table</p>
-              <p class="project-task">Copy Responsive flip scroll table, so there are two on the page</p>
-              <p class="project-task">Change top table column names to Date, Caller, Notes, delete all other columns</p>
-              <p class="project-task">Change bottom table column names to Username, Status</p>
+              <p class="project-task">Add OpenTok module to package.json, npm install opentok --save</p>
+              <p class="project-task">Update loopback call model to include user and status properties</p>
+              <p class="project-task">Require OpenTok in common/models/call.js</p>
+              <p class="project-task">Create OpenTok session per docs</p>
+              <p class="project-task">Generate OpenTok token per docs, return as JSON</p>
+              <p class="project-task">Set user property of Call object to logged in user, set status to active,</p>
+          </div>
+          <div class="project-resources">
+              <p class="project-github">
+                <a href="https://github.com/thisbounty/WebRTC-Frontend"><i class="fa fa-github" aria-hidden="true"></i></a>
+                &nbsp;&nbsp;
+                <a href="https://github.com/thisbounty/WebRTC-Frontend">Github Repo</a>
+              </p>
+          </div>
+          <div class="project-references">
+                <a href="https://tokbox.com/developer/sdks/server/">OpenTok docs</a>
+                <a href="http://loopback.io/doc/en/lb2/Model-definition-JSON-file.html">Loopback models</a>
+          </div>
+        </div>
+        <div class="slide">
+          <p class="project-title">Desktop OpenTok Client</p>
+          <p class="project-created project-date">November 8, 2016</p>
+          <p class="project-price">$25.00 USD</p>
+          <p class="project-notes">Display GET /calls endpoint results in desktop frontend. Poll for calls.</p>
+          <div class="project-tasks">
+              <p class="project-task">Loopback should provide endpoint already for listing calls. If needed, pass filter parameter, and require user login</p>
+              <p class="project-task">Display results in frontend table. Show date created and username, and add column</p>
+              <p class="project-task">Create button to which GETs response of /calls/connect/:id endpoint</p>
+              <p class="project-task">On push notification, update table</p>
+          </div>
+          <div class="project-resources">
+              <p class="project-github">
+                <a href="https://github.com/thisbounty/WebRTC-Frontend"><i class="fa fa-github" aria-hidden="true"></i></a>
+                &nbsp;&nbsp;
+                <a href="https://github.com/thisbounty/WebRTC-Frontend">Github Repo</a>
+              </p>
+          </div>
+          <div class="project-references">
+                <a href="https://tokbox.com/developer/sdks/js/">OpenTok docs</a>
+                <a href="http://loopback.io/doc/en/lb2/Realtime-server-sent-events.html">Push notification</a>
+          </div>
+        </div>
+        <div class="slide">
+          <p class="project-title">Web App OpenTok Client</p>
+          <p class="project-created project-date">November 8, 2016</p>
+          <p class="project-price">$25.00 USD</p>
+          <p class="project-notes">User login, request call/new endpoint to get token, connect </p>
+          <div class="project-tasks">
+              <p class="project-task">Login to loopback to get auth token</p>
+              <p class="project-task">Request new OpenTok session and token from call/new endpoint</p>
+              <p class="project-task">Connect to WebRTC session using OpenTok token</p>
+          </div>
+          <div class="project-resources">
+              <p class="project-github">
+                <a href="https://github.com/thisbounty/WebRTC-Frontend"><i class="fa fa-github" aria-hidden="true"></i></a>
+                &nbsp;&nbsp;
+                <a href="https://github.com/thisbounty/WebRTC-Frontend">Github Repo</a>
+              </p>
+          </div>
+          <div class="project-references">
+                <a href="https://tokbox.com/developer/sdks/js/">OpenTok docs</a>
+          </div>
+        </div>
+        <div class="slide">
+          <p class="project-title">Desktop call handler</p>
+          <p class="project-created project-date">November 8, 2016</p>
+          <p class="project-price">$25.00 USD</p>
+          <p class="project-notes">Handle calls from desktop app. On call connect, change status in server side object, and connect using existing OpenTok auth token.</p>
+          <div class="project-tasks">
+              <p class="project-task">Create call/connect:id endpoint in Loopback</p>
+              <p class="project-task">Lookup call by id</p>
+              <p class="project-task">Set call status to connected, save</p>
+              <p class="project-task">In desktop client, connect to OpenTok session</p>
+          </div>
+          <div class="project-resources">
+              <p class="project-github">
+                <a href="https://github.com/thisbounty/WebRTC-Frontend"><i class="fa fa-github" aria-hidden="true"></i></a>
+                &nbsp;&nbsp;
+                <a href="https://github.com/thisbounty/WebRTC-Frontend">Github Repo</a>
+              </p>
+          </div>
+          <div class="project-references">
+                <a href="https://tokbox.com/developer/sdks/js/">OpenTok docs</a>
+          </div>
+        </div>
+        <div class="slide">
+          <p class="project-title">OpenTok Cron</p>
+          <p class="project-created project-date">November 8, 2016</p>
+          <p class="project-price">$25.00 USD</p>
+          <p class="project-notes">Interval poll all connected OpenTok sessions. Need to close long ones, and update desktop client when calls end.</p>
+          <div class="project-tasks">
+              <p class="project-task">Create new call/cron endpoint, only allowed shared secret access through GET variable</p>
+              <p class="project-task">Retrieve all calls in connected status</p>
+              <p class="project-task">Use OpenTok API to lookup session, and retrieve number of connections for each call</p>
+              <p class="project-task">For each OpenTok session without connections, set Call "status" property to "Ended", close OpenTok session using OpenTok API, and send push notification to desktop clients</p>
+          </div>
+          <div class="project-resources">
+              <p class="project-github">
+                <a href="https://github.com/thisbounty/WebRTC-Frontend"><i class="fa fa-github" aria-hidden="true"></i></a>
+                &nbsp;&nbsp;
+                <a href="https://github.com/thisbounty/WebRTC-Frontend">Github Repo</a>
+              </p>
+          </div>
+          <div class="project-references">
+                <a href="https://tokbox.com/developer/sdks/js/">OpenTok docs</a>
           </div>
         </div>
     </div>

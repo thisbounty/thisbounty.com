@@ -246,9 +246,11 @@ p {
   }
   .invisible {
       opacity:0;
+      z-index:0;
   }
   .visible {
       opacity:1;
+      z-index:1000;
   }
 
   p.project-header {
