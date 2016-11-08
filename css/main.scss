@@ -74,7 +74,6 @@ a:hover {
 }
 
 .top-banner{
-    padding: 0px 0 25px 0;
     box-sizing: border-box;
     .title{
         font-weight: 700;
@@ -186,6 +185,7 @@ a:hover {
   margin: 0 auto;
   font-size:120px;
   width:120px;
+  line-height:80px;
   &:hover {
       transition: 1.0s box-shadow;
       text-shadow: 4px 4px #000;
@@ -205,11 +205,10 @@ p {
   width:780px;
   max-width:100%;
   margin:10px auto 0;
-  height:100px;
+  height:235px;
   position: relative;
   overflow: hidden;
 
-  // slide item
   .slide {
     display: flex;
     flex-direction: column;
@@ -227,6 +226,7 @@ p {
 
     // slide text paragraph
     p {
+      font-weight:normal;
       display:flex;
       align-items: center;
       margin: 0;
@@ -240,5 +240,51 @@ p {
       &:nth-of-type(5n+4) { transition: .75s; }
       &:nth-of-type(5n+5) { transition: 1.25s; }
     }
+  } //.slide
+  .invisible, .visible {
+       transition:1s;
   }
-}
+  .invisible {
+      opacity:0;
+  }
+  .visible {
+      opacity:1;
+  }
+
+  p.project-header {
+    margin:10px 0px;
+  }
+
+  p.project-title {
+    float:left;
+  }
+  p.project-created {
+    float:left;
+    clear:left;
+  }
+  p.project-price {
+    float:right;
+  }
+  p.project-notes {
+    float:none;
+    clear:both;
+    padding:20px 0px 20px 30px;
+  }
+  div.project-tasks {
+    height: 168px;
+    overflow-y: scroll;
+    overflow-x: hidden; 
+  }
+  p.project-task {
+    padding:4px 0 0 30px;
+  }
+  p.project-task:before {
+    content:" - ";
+    padding:2px 15px;
+  }
+  div.project-resources {
+    margin-top:10px;
+  }
+} //#textSlider
+
+
