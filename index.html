@@ -78,8 +78,8 @@
       </div> <!-- container -->
     </div> <!-- points content -->
     </section>
+    <br>
     <div id="textSlider">
-        <p>Contribute through github pull requests or codepen</p>
         <div class="slide active">
           <div class="project-header">
               <p class="project-title">Metronic Theme Install</p>
@@ -108,10 +108,12 @@
           </div>
         </div>
         <div class="slide">
-          <p class="project-title">Loopback and TokBox call/new endpoint</p>
-          <p class="project-created project-date">November 8, 2016</p>
-          <p class="project-price">$50.00 USD</p>
-          <p class="project-notes">Need to integrate OpenTok Node SDK to call/new endpoint in Loopback. Create an OpenTok session and generate an OpenTok token. Return as JSON, and restrict endpoint to logged in users.</p>
+          <div class="project-header">
+              <p class="project-title">Loopback and TokBox call/new endpoint</p>
+              <p class="project-created project-date">November 8, 2016</p>
+              <p class="project-price">$50.00 USD</p>
+              <p class="project-notes">Need to integrate OpenTok Node SDK to call/new endpoint in Loopback. Create an OpenTok session and generate an OpenTok token. Return as JSON, and restrict endpoint to logged in users.</p>
+          </div>
           <div class="project-tasks">
               <p class="project-task">Add OpenTok module to package.json, npm install opentok --save</p>
               <p class="project-task">Update loopback call model to include user and status properties</p>
@@ -133,10 +135,12 @@
           </div>
         </div>
         <div class="slide">
-          <p class="project-title">Desktop OpenTok Client</p>
-          <p class="project-created project-date">November 8, 2016</p>
-          <p class="project-price">$25.00 USD</p>
-          <p class="project-notes">Display GET /calls endpoint results in desktop frontend. Poll for calls.</p>
+          <div class="project-header">
+              <p class="project-title">Desktop OpenTok Client</p>
+              <p class="project-created project-date">November 8, 2016</p>
+              <p class="project-price">$25.00 USD</p>
+              <p class="project-notes">Display GET /calls endpoint results in desktop frontend. Poll for calls.</p>
+          </div>
           <div class="project-tasks">
               <p class="project-task">Loopback should provide endpoint already for listing calls. If needed, pass filter parameter, and require user login</p>
               <p class="project-task">Display results in frontend table. Show date created and username, and add column</p>
@@ -156,10 +160,12 @@
           </div>
         </div>
         <div class="slide">
-          <p class="project-title">Web App OpenTok Client</p>
-          <p class="project-created project-date">November 8, 2016</p>
-          <p class="project-price">$25.00 USD</p>
-          <p class="project-notes">User login, request call/new endpoint to get token, connect </p>
+          <div class="project-header">
+              <p class="project-title">Web App OpenTok Client</p>
+              <p class="project-created project-date">November 8, 2016</p>
+              <p class="project-price">$25.00 USD</p>
+              <p class="project-notes">User login, request call/new endpoint to get token, connect </p>
+          </div>
           <div class="project-tasks">
               <p class="project-task">Login to loopback to get auth token</p>
               <p class="project-task">Request new OpenTok session and token from call/new endpoint</p>
@@ -177,10 +183,12 @@
           </div>
         </div>
         <div class="slide">
-          <p class="project-title">Desktop call handler</p>
-          <p class="project-created project-date">November 8, 2016</p>
-          <p class="project-price">$25.00 USD</p>
-          <p class="project-notes">Handle calls from desktop app. On call connect, change status in server side object, and connect using existing OpenTok auth token.</p>
+          <div class="project-header">
+              <p class="project-title">Desktop call handler</p>
+              <p class="project-created project-date">November 8, 2016</p>
+              <p class="project-price">$25.00 USD</p>
+              <p class="project-notes">Handle calls from desktop app. On call connect, change status in server side object, and connect using existing OpenTok auth token.</p>
+          </div>
           <div class="project-tasks">
               <p class="project-task">Create call/connect:id endpoint in Loopback</p>
               <p class="project-task">Lookup call by id</p>
@@ -199,10 +207,12 @@
           </div>
         </div>
         <div class="slide">
-          <p class="project-title">OpenTok Cron</p>
-          <p class="project-created project-date">November 8, 2016</p>
-          <p class="project-price">$25.00 USD</p>
-          <p class="project-notes">Interval poll all connected OpenTok sessions. Need to close long ones, and update desktop client when calls end.</p>
+          <div class="project-header">
+              <p class="project-title">OpenTok Cron</p>
+              <p class="project-created project-date">November 8, 2016</p>
+              <p class="project-price">$25.00 USD</p>
+              <p class="project-notes">Interval poll all connected OpenTok sessions. Need to close long ones, and update desktop client when calls end.</p>
+          </div>
           <div class="project-tasks">
               <p class="project-task">Create new call/cron endpoint, only allowed shared secret access through GET variable</p>
               <p class="project-task">Retrieve all calls in connected status</p>
