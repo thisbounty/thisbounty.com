@@ -160,10 +160,10 @@
               <p class="project-notes">Interval poll all connected OpenTok sessions. Need to close long ones, and update desktop client when calls end.</p>
           </div>
           <div class="project-tasks">
-              <p class="project-task">Create new call/cron endpoint, only allowed shared secret access through GET variable</p>
-              <p class="project-task">Retrieve all calls in connected status</p>
-              <p class="project-task">Use OpenTok API to lookup session, and retrieve number of connections for each call</p>
-              <p class="project-task">For each OpenTok session without connections, set Call "status" property to "Ended", close OpenTok session using OpenTok API, and send push notification to desktop clients</p>
+              <p>Create new endpoint /call/hearbeat/:id, use to update caller and searcher timestamp</p>
+              <p>Create new endpoint /call/cron. Select all calls where caller or searcher heartbeat > 30 seconds.<p>
+              <p>With selected records, call API to destroy session, and update status to disconnected, and send SSE for status update</p>
+              <p>Create cron to request /call/cron</p>
           </div>
           <div class="project-resources">
               <p class="project-github">
