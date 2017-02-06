@@ -17,6 +17,13 @@
     }
 }
 
+.ui.celled.table.no-border, .ui.celled.table.no-border tr th, .ui.celled.table.no-border tr td {
+    border: 1px solid #333;
+    box-shadow: 1px 0px 2px 0px #343434;
+}
+.ui.celled.table.no-border tr td p {
+    font-weight: normal;
+}
 [class^="icon-"], [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'icomoon' !important;
